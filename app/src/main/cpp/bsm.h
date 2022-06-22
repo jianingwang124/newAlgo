@@ -10,6 +10,13 @@
 using namespace cv;
 using namespace std;
 
+struct bbox{
+    int x0;
+    int x1;
+    int y0;
+    int y1;
+    pair<int, int> centroid;
+};
 class bsm {
 public:
     static vector<Mat> bsmMog2(Mat &src);
